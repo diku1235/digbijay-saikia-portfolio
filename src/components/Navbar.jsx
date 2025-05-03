@@ -127,7 +127,7 @@ export default function Navbar() {
         >
           <li>
             <a
-              href="#home"
+              href="#"
               className={`hover:text-[#1465ff] ${activeSection === 'home' ? 'text-[#1465ff]' : ''}`}
               onClick={() => handleLinkClick('home')}
             >
