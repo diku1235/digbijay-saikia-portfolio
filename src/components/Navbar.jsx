@@ -15,7 +15,7 @@ export default function Navbar() {
 
         {/* Desktop Nav Links */}
         <ul className="hidden lg:flex gap-[50px] text-md font-medium text-gray-800">
-          <li><a href="#hero" className="hover:text-[#1465ff]">Home</a></li>
+          <li><a href="#" className="hover:text-[#1465ff]">Home</a></li>
           <li><a href="#services" className="hover:text-[#1465ff]">Services</a></li>
           <li><a href="#about" className="hover:text-[#1465ff]">About Me</a></li>
           <li><a href="#projects" className="hover:text-[#1465ff]">Projects</a></li>

@@ -8,7 +8,7 @@ import dsLogo from '../assets/ds_logo_footer.svg';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1f1f1f] text-white px-6 sm:px-12 md:px-24 py-0 rounded-t-[2rem]">
+    <footer className="bg-[#1f1f1f] text-white mt-28 px-6 sm:px-12 md:px-24 py-0 rounded-t-[2rem]">
       <div className="max-w-[1400px] mx-auto px-6 py-10 md:py-20 mt-10">
         
         {/* Top CTA */}
@@ -38,10 +38,10 @@ export default function Footer() {
               crafting intuitive, user-centered digital experiences.
             </p>
             <div className="flex gap-4">
-              <a href="#"><img src={linkedinIcon} alt="LinkedIn" className="w-10 h-10 rounded-full bg-white p-1" /></a>
-              <a href="#"><img src={behanceIcon} alt="Behance" className="w-10 h-10 rounded-full bg-white p-1" /></a>
-              <a href="#"><img src={twitterIcon} alt="Twitter" className="w-10 h-10 rounded-full bg-white p-1" /></a>
-              <a href="#"><img src={youtubeIcon} alt="YouTube" className="w-10 h-10 rounded-full bg-white p-1" /></a>
+              <a target="_blank" href="https://www.linkedin.com/in/digbijay-saikia/"><img src={linkedinIcon} alt="LinkedIn" className="w-10 h-10 rounded-full bg-white p-1" /></a>
+              <a target="_blank" href="https://www.behance.net/digbijaysaikia"><img src={behanceIcon} alt="Behance" className="w-10 h-10 rounded-full bg-white p-1" /></a>
+              <a target="_blank" href="https://x.com/diku1235"><img src={twitterIcon} alt="Twitter" className="w-10 h-10 rounded-full bg-white p-1" /></a>
+              <a target="_blank" href="https://www.youtube.com/channel/UCapinH5QNPvmEkA_iqVVKfg"><img src={youtubeIcon} alt="YouTube" className="w-10 h-10 rounded-full bg-white p-1" /></a>
             </div>
           </div>
 
@@ -50,9 +50,9 @@ export default function Footer() {
             <h4 className="font-bold mb-3">Navigation</h4>
             <ul className="space-y-2 text-gray-300">
               <li><a href="#">Home</a></li>
-              <li><a href="#">Service</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Projects</a></li>
+              <li><a href="#services">Service</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
             </ul>
           </div>
 

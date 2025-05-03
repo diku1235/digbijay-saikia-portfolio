@@ -32,7 +32,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="max-w-[1400px] mx-auto px-6 py-10 md:py-20 mt-10 lg:mt-15">
+    <section id="services" className="scroll-mt-28 max-w-[1400px] mx-auto px-6 py-10 md:py-20 mt-10 lg:mt-15">
       <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-black">
         My <span className="text-blue-600">Services</span>
       </h2>

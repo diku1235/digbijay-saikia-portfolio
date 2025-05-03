@@ -33,7 +33,7 @@ export default function About() {
   ];
 
   return (
-    <section className="max-w-[1400px] mx-auto px-6 py-20 mt-6 lg:mt-10 flex flex-col-reverse lg:flex-row items-center gap-10">
+    <section id="about" className="scroll-mt-28 max-w-[1400px] mx-auto px-6 py-20 mt-6 lg:mt-10 flex flex-col-reverse lg:flex-row items-center gap-10">
       {/* Avatar */}
       <div className="flex-shrink-0 w-full max-w-[400px] sm:max-w-[350px] md:max-w-[400px] mx-auto lg:mx-0">
         <img
