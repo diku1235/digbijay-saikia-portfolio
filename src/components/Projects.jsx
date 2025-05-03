@@ -34,19 +34,19 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="scroll-mt-28 max-w-[1400px] mx-auto px-6 py-10 md:py-20 mt-10 lg:mt-15"
+      className="scroll-mt-28 max-w-[1400px] mx-auto px-6 py-20 md:py-30 lg:py-20"
     >
-      <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-black text-center">
-        My <span className="text-blue-600">Projects</span>
+      <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-black dark:text-white text-center">
+        My <span className="text-blue-600 dark:text-blue-600">Projects</span>
       </h2>
-      <p className="text-center text-gray-500 mb-12 max-w-2xl mx-auto">
+      <p className="text-center text-gray-500 dark:text-gray-300 mb-12 max-w-2xl mx-auto">
         Case studies reflecting my design thinking, attention to detail, and problem-solving skills.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-[#ffffff] rounded-2xl p-6 text-center shadow-md hover:shadow-lg transition"
+            className="bg-white dark:bg-[#21203d] rounded-2xl p-6 text-center shadow-md hover:shadow-lg transition"
           >
             <div className="w-full mb-4">
               <img
@@ -55,13 +55,13 @@ export default function Projects() {
                 className="w-full h-full object-contain rounded-xl"
               />
             </div>
-            <h3 className="text-xl font-bold text-black mb-2">{project.title}</h3>
-            <p className="text-gray-600 text-sm mb-4">{project.description}</p>
+            <h3 className="text-xl font-bold text-black dark:text-white mb-2">{project.title}</h3>
+            <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">{project.description}</p>
             <div className="flex flex-wrap justify-center gap-2 mb-4">
               {project.tags.map((tag, i) => (
                 <span
                   key={i}
-                  className="bg-blue-600 text-white px-3 py-1 text-xs rounded-full font-medium"
+                  className="bg-blue-600 dark:bg-blue-600 text-white px-3 py-1 text-xs rounded-full font-medium"
                 >
                   {tag}
                 </span>

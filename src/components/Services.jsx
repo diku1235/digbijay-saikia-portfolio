@@ -32,22 +32,26 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="scroll-mt-28 max-w-[1400px] mx-auto px-6 py-10 md:py-20 mt-10 lg:mt-15">
-      <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-black">
+    <section id="services" className="scroll-mt-28 max-w-[1400px] mx-auto px-6 py-20 md:py-30 lg:py-20">
+      <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-black dark:text-white">
         My <span className="text-blue-600">Services</span>
       </h2>
-      <p className="text-center text-gray-500 mb-12 max-w-2xl mx-auto">
+      <p className="text-center text-gray-500 mb-12 max-w-2xl mx-auto dark:text-gray-400">
         Design and development solutions crafted to elevate user experience and meet business goals.
       </p>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {services.map((service, index) => (
           <div
             key={index}
-            className="bg-[#E9EDF3] rounded-2xl p-6 text-center shadow-md hover:shadow-lg transition"
+            className="bg-[#E9EDF3] dark:bg-[#21203d] rounded-2xl p-6 text-center shadow-md hover:shadow-lg transition"
           >
-            <img src={service.icon} alt={service.title} className="mx-auto mb-4 h-24" />
-            <h3 className="text-xl font-bold text-blue-600 mb-2">{service.title}</h3>
-            <p className="text-gray-600 text-sm">{service.description}</p>
+            <div className="text-black dark:text-white">
+  <img src={service.icon} alt={service.title} className="mx-auto mb-4 h-24" />
+</div>
+
+            <h3 className="text-xl font-bold text-blue-600 dark:text-white mb-2">{service.title}</h3>
+            <p className="text-gray-600 dark:text-gray-300 text-sm">{service.description}</p>
           </div>
         ))}
       </div>

@@ -1,18 +1,25 @@
 @import "tailwindcss";
-@import '@fontsource/poppins/400.css';  /* Regular weight */
-@import '@fontsource/poppins/600.css';  /* Semi-bold weight */
+@import '@fontsource/poppins/400.css';  
+@import '@fontsource/poppins/600.css';  
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  --primary: #161616;   /* Primary text color */
-  --brand: #1465ff;      /* Brand color */
-  
+  --primary-light: #161616;   
+  --brand-light: #1465ff;     
+  --background-light: white;
+  --color-light: rgba(255, 255, 255, 0.87);
+
+  --primary-dark: #ffffff;   
+  --brand-dark: #1465ff;     
+  --background-dark: #0f0e2e;
+  --color-dark: rgba(255, 255, 255, 0.87);
+
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #ffffff;
+  color: var(--color-light);
+  background-color: var(--background-light);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,8 +31,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-/* Body styles */
 body {
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
@@ -33,10 +38,10 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  color: var(--primary); /* Default text color */
+  color: var(--primary-light); 
+  background-color: var(--background-light);
 }
 
-/* Button styles */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -44,35 +49,36 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: var(--brand); /* Button background using primary */
-  color: white; /* Button text color */
+  background-color: var(--brand-light);
+  color: white; 
   cursor: pointer;
   transition: border-color 0.25s;
   border-radius: 100px;
 }
 
 button:hover {
-  border-color: var(--brand); /* Hover effect with brand color */
+  border-color: var(--brand-light); 
 }
 
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 4px auto;
 }
 
-/* Light mode styles */
-@media (prefers-color-scheme: light) {
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: var(--color-dark);
+    background-color: var(--background-dark);
   }
-
-  a:hover {
-    color: #747bff; /* Light mode hover color */
+  body {
+    color: var(--primary-dark);
+    background-color: var(--background-dark);
   }
-
   button {
-    background-color: #f9f9f9; /* Light button background */
+    background-color: var(--brand-dark);
+  }
+  button:hover {
+    border-color: var(--brand-dark); 
   }
 }
-
