@@ -41,7 +41,7 @@ export default function Hero() {
 
       {/* Scroll Strap */}
       
-      <div className="absolute lg:top-[840px] md:top-[60%] left-1/2 -translate-x-1/2 w-screen z-10 transform">
+      <div className="absolute lg:top-[820px] md:top-[650px] left-1/2 -translate-x-1/2 w-screen z-10 transform">
         <ScrollingStrap />
       </div>
 

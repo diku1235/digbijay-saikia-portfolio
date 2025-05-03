@@ -15,7 +15,7 @@ export default function About() {
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.9 }
     );
 
     barRefs.current.forEach(ref => {
@@ -45,7 +45,7 @@ export default function About() {
 
       {/* Content */}
       <div className="flex-1 text-center lg:text-left">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-black">
+        <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-black">
           About <span className="text-blue-600">Me</span>
         </h2>
         <p className="text-gray-600 mb-10 max-w-xl">
