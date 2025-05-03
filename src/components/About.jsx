@@ -46,7 +46,7 @@ export default function About() {
       {/* Content */}
       <div className="flex-1 text-center lg:text-left">
         <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-black dark:text-white">
-          About <span className="text-blue-600 dark:text-blue-600">Me</span>
+          About <span className="text-blue-600 dark:text-blue-00">Me</span>
         </h2>
         <p className="text-gray-600 mb-10 max-w-xl dark:text-gray-300">
           I’m Digbijay Saikia, a UI/UX Designer and Web Developer with an MCA and BCA background.

@@ -55,7 +55,7 @@ export default function Navbar() {
         <ul className="hidden lg:flex gap-[50px] text-md font-medium text-gray-800 dark:text-gray-200">
           <li>
             <a
-              href="#home"
+              href="#"
               className={`hover:text-[#1465ff] ${activeSection === 'home' ? 'text-[#1465ff]' : ''}`}
               onClick={() => handleLinkClick('home')}
             >

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import project1 from '../assets/project1.png';
 import project2 from '../assets/project2.png';
 import project3 from '../assets/project3.png';
@@ -31,6 +31,29 @@ const projects = [
 ];
 
 export default function Projects() {
+  const [visibleIndexes, setVisibleIndexes] = useState([]);
+  const projectRefs = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          const index = parseInt(entry.target.getAttribute('data-index'));
+          if (entry.isIntersecting && !visibleIndexes.includes(index)) {
+            setVisibleIndexes(prev => [...prev, index]);
+          }
+        });
+      },
+      { threshold: 0.5 } // Trigger when 50% of the element is in view
+    );
+
+    projectRefs.current.forEach(ref => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => observer.disconnect();
+  }, [visibleIndexes]);
+
   return (
     <section
       id="projects"
@@ -46,7 +69,13 @@ export default function Projects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-white dark:bg-[#21203d] rounded-2xl p-6 text-center shadow-md hover:shadow-lg transition"
+            ref={el => (projectRefs.current[index] = el)}
+            data-index={index}
+            className={`bg-white dark:bg-[#21203d] rounded-2xl p-6 text-center shadow-md hover:shadow-lg transition-all duration-700 ease-in-out transform ${
+              visibleIndexes.includes(index)
+                ? 'translate-y-0 opacity-100'
+                : 'translate-y-8 opacity-0'
+            }`}
           >
             <div className="w-full mb-4">
               <img
