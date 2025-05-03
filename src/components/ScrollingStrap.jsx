@@ -25,7 +25,7 @@ const items = [
 export default function ScrollingStrap() {
   return (
     <div className="overflow-hidden bg-blue-600 py-2">
-      <div className="animate-marquee text-white font-medium text-lg sm:text-xl md:text-2xl lg:text-3xl">
+      <div className="animate-marquee text-white font-medium text-lg sm:text-xl md:text-2xl lg:text-4xl">
         <div className="flex items-center space-x-6 sm:space-x-8">
           {[...items, ...items, ...items].map((item, index) => (
             <div key={index} className="flex items-center whitespace-nowrap">
