@@ -92,10 +92,14 @@ export default function Navbar() {
         </ul>
 
         {/* Contact Button */}
-        <button className="hidden lg:flex items-center gap-2 bg-[#1465ff] text-white text-lg px-6 py-2 rounded-[100px] font-medium hover:bg-blue-700 transition">
+        <a
+          href="tel:+917896167516"
+          className="hidden lg:flex items-center gap-2 bg-[#1465ff] text-white text-lg px-6 py-2 rounded-[100px] font-medium hover:bg-blue-700 transition"
+        >
           Contact Me
           <img src={buttonIcon} alt="Arrow Icon" className="w-5 h-5" />
-        </button>
+        </a>
+
 
         {/* Hamburger Menu */}
         <div className="lg:hidden flex items-center">
@@ -162,10 +166,13 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <button className="w-full flex items-center justify-center gap-2 bg-[#1465ff] text-white py-2 rounded-full hover:bg-blue-700 transition">
-              Contact Me
-              <img src={buttonIcon} alt="Arrow Icon" className="w-5 h-5" />
-            </button>
+              <a
+                href="tel:+917896167516"
+                className="w-full flex items-center justify-center gap-2 bg-[#1465ff] text-white py-2 rounded-full hover:bg-blue-700 transition"
+              >
+                Contact Me
+                <img src={buttonIcon} alt="Arrow Icon" className="w-5 h-5" />
+              </a>
           </li>
         </ul>
       </nav>

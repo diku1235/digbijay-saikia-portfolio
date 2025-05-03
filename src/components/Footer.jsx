@@ -16,10 +16,17 @@ export default function Footer() {
           <h2 className="text-3xl sm:text-4xl font-bold text-left text-white dark:text-gray-200">
             Let’s Connect there
           </h2>
-          <button className="flex items-center gap-2 bg-[#1465ff] text-white text-lg px-6 py-2 rounded-[100px] font-medium hover:bg-blue-700 transition">
-            Hire Me
-            <img src={buttonIcon} alt="Arrow Icon" className="w-5 h-5" />
-          </button>
+          <a
+            href="https://calendly.com/digbijaysaikia/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="flex items-center gap-2 bg-[#1465ff] text-white text-lg px-6 py-2 rounded-[100px] font-medium hover:bg-blue-700 transition">
+              Schedule Meet
+              <img src={buttonIcon} alt="Arrow Icon" className="w-5 h-5" />
+            </button>
+          </a>
+
         </div>
 
         <hr className="border-gray-600 dark:border-gray-700 mb-12" />
@@ -70,9 +77,14 @@ export default function Footer() {
           {/* Newsletter */}
           <div>
             <h4 className="font-bold text-white dark:text-gray-200 mb-3">Get the latest information</h4>
-            <form className="flex mt-3">
+            <form
+              action="https://formspree.io/f/mjkwypae"
+              method="POST"
+              className="flex mt-3"
+            >
               <input
                 type="email"
+                name="email" // Make sure to include the name attribute for the input field
                 placeholder="Email Address"
                 className="px-4 py-2 w-full bg-white dark:bg-gray-700 text-black dark:text-white rounded-l-full outline-none"
               />
@@ -85,6 +97,7 @@ export default function Footer() {
               </button>
             </form>
           </div>
+
 
         </div>
 
