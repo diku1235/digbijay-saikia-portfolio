@@ -40,13 +40,15 @@ export default function Hero() {
       </div>
 
       {/* Scroll Strap */}
+      {/*
       <div className="absolute lg:top-[820px] md:top-[60%] left-1/2 -translate-x-1/2 w-screen z-10 transform rotate-[-1.5deg]">
         <ScrollingStrap />
       </div>
 
       <div className="overflow-hidden absolute h-10 bg-gray-950 lg:top-[820px] md:top-[60%] left-1/2 -translate-x-1/2 w-screen z-9 transform rotate-[.5deg]">
-      
       </div>
+      */}
+      
     </section>
   );
 }
