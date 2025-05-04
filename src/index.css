@@ -9,7 +9,7 @@
 
   --primary-light: #161616;   
   --brand-light: #1465ff;     
-  --background-light: white;
+  --background-light: rgb(241, 241, 241);
   --color-light: rgba(255, 255, 255, 0.87);
 
   --primary-dark: #ffffff;   

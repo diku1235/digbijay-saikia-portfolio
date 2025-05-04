@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import uiuxIcon from '../assets/uiux_icon.svg';
-import webIcon from '../assets/web_icon.svg';
+import webIcon from '../assets/webdev_icon.svg';
 import graphicsIcon from '../assets/graphics_icon.svg';
-import appIcon from '../assets/app_icon.svg';
+import brandIcon from '../assets/branding_icon.svg';
 
 export default function Services() {
   const [visibleIndexes, setVisibleIndexes] = useState([]);
@@ -14,25 +14,25 @@ export default function Services() {
       title: "UI/UX Design",
       icon: uiuxIcon,
       description:
-        "Designing user-friendly and visually appealing interfaces with a focus on usability and user satisfaction.",
+        "Crafting user-centric interfaces that are intuitive, engaging, conversion-focused, seamless, and efficient.",
     },
     {
-      title: "Web Design",
+      title: "Web Development",
       icon: webIcon,
       description:
-        "Designing user-friendly and visually appealing interfaces with a focus on usability and user satisfaction.",
+        "Building responsive, fast, and scalable websites tailored to your goals—secure, dynamic, and maintainable.",
     },
     {
       title: "Graphics Design",
       icon: graphicsIcon,
       description:
-        "Designing user-friendly and visually appealing interfaces with a focus on usability and user satisfaction.",
+        "Designing eye-catching visuals for digital and print that reflect your brand—creative, consistent, polished.",
     },
     {
-      title: "App Design",
-      icon: appIcon,
+      title: "Branding",
+      icon: brandIcon,
       description:
-        "Designing user-friendly and visually appealing interfaces with a focus on usability and user satisfaction.",
+        "Creating strong, memorable brand identities with logo design that connect—strategic and impactful.",
     },
   ];
 
@@ -71,7 +71,7 @@ export default function Services() {
             key={index}
             ref={el => (serviceRefs.current[index] = el)}
             data-index={index}
-            className={`bg-[#E9EDF3] dark:bg-[#21203d] rounded-2xl p-6 text-center shadow-md hover:shadow-lg transition-all duration-700 ease-in-out transform ${
+            className={`bg-[#ffffff] dark:bg-[#21203d] rounded-2xl p-6 text-center shadow-2xs hover:shadow-lg transition-all duration-700 ease-in-out transform ${
               visibleIndexes.includes(index)
                 ? 'translate-y-0 opacity-100'
                 : 'translate-y-10 opacity-0'

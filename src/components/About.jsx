@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import avatar from '../assets/about_avatar.png';
+import avatarLight from '../assets/about_avatar_light.svg';
+import avatarDark from '../assets/about_avatar_dark.svg';
 
 export default function About() {
   const barRefs = useRef([]);
@@ -35,11 +36,19 @@ export default function About() {
   return (
     <section id="about" className="scroll-mt-28 max-w-[1400px] mx-auto px-6 py-20 md:py-30 lg:py-20 flex flex-col-reverse lg:flex-row items-center gap-10">
       {/* Avatar */}
-      <div className="flex-shrink-0 w-full max-w-[400px] sm:max-w-[350px] md:max-w-[400px] mx-auto lg:mx-0">
+      <div className="text-flex-shrink-0 w-full max-w-[400px] sm:max-w-[350px] md:max-w-[400px] mx-auto lg:mx-0">
+        {/* Light Mode SVG */}
         <img
-          src={avatar}
-          alt="Digbijay Saikia Avatar"
-          className="rounded-3xl w-full h-auto"
+          src= {avatarLight}
+          alt="Digbijay Saikia Avatar Light"
+          className="block dark:hidden rounded-3xl w-full h-auto"
+        />
+
+        {/* Dark Mode SVG */}
+        <img
+          src= {avatarDark}
+          alt="Digbijay Saikia Avatar Dark"
+          className="hidden dark:block rounded-3xl w-full h-auto"
         />
       </div>
 

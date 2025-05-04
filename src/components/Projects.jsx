@@ -71,7 +71,7 @@ export default function Projects() {
             key={index}
             ref={el => (projectRefs.current[index] = el)}
             data-index={index}
-            className={`bg-white dark:bg-[#21203d] rounded-2xl p-6 text-center shadow-md hover:shadow-lg transition-all duration-700 ease-in-out transform ${
+            className={`bg-white dark:bg-[#21203d] rounded-2xl p-6 text-center shadow-2xs hover:shadow-lg transition-all duration-700 ease-in-out transform ${
               visibleIndexes.includes(index)
                 ? 'translate-y-0 opacity-100'
                 : 'translate-y-8 opacity-0'
