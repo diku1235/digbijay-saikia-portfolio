@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import avatarLight from '../assets/about_avatar_light.svg';
-import avatarDark from '../assets/about_avatar_dark.svg';
+import avatarLight from '../assets/about_avatar_light.png';
+import avatarDark from '../assets/about_avatar_dark.png';
 
 export default function About() {
   const barRefs = useRef([]);
