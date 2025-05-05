@@ -40,7 +40,9 @@ export default function Navbar() {
 
   const handleLinkClick = (section) => {
     setActiveSection(section);
+    setMenuOpen(false); // ✅ Close mobile menu on click
   };
+  
 
   return (
     <div className="fixed top-6 left-0 right-0 z-50 max-w-[1400px] mx-auto px-6">

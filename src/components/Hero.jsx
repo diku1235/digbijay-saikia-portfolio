@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="scroll-mt-28 max-w-[1400px] mx-auto px-6 py-10 md:py-20 mt-6 lg:mt-10 dark:bg-[var(--background-dark)] dark:text-[var(--color-dark)]"
+      className="scroll-mt-28 min-h-screen max-w-[1400px] mx-auto px-6 py-10 md:py-20 mt-6 lg:mt-10 dark:bg-[var(--background-dark)] dark:text-[var(--color-dark)]"
     >
       {/* Main content with responsive spacing */}
       <div className="flex flex-col md:flex-row items-center justify-between mb-12 sm:mb-16 md:mb-20 lg:mb-10 gap-8 sm:gap-12 md:gap-12 lg:gap-16">
@@ -17,7 +17,7 @@ export default function Hero() {
           className="md:w-1/2 lg:text-left"
           initial={{ opacity: 0, y: 80 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 1, delay: 0.2  }}
         >
           <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white">
             Hi<span className="inline-block animate-wave origin-[70%_70%]">👋</span>,<br />
@@ -48,7 +48,7 @@ export default function Hero() {
           className="relative md:w-1/2 mt-8 md:mt-0"
           initial={{ opacity: 0, y: 80 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.2 }}
+          transition={{ duration: 1, delay: 0.4 }}
         >
           <img
             src={heroImg}
