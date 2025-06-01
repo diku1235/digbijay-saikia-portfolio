@@ -82,3 +82,25 @@ button:focus-visible {
     border-color: var(--brand-dark); 
   }
 }
+
+.scrolling-strap-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  z-index: 10;
+}
+
+/* Large devices (lg): 1024px to 1290px */
+@media (min-width: 1024px) and (max-width: 1290px) {
+  .scrolling-strap-container {
+    top: 100px;
+  }
+}
+
+/* Extra extra large devices (xxl): 1536px and up */
+@media (min-width: 1536px) {
+  .scrolling-strap-container {
+    top: 170px;
+  }
+}
