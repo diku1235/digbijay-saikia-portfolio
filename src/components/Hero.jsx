@@ -30,7 +30,7 @@ export default function Hero() {
 
           <div className="mt-10 flex justify-center lg:justify-start gap-4">
             <a 
-              href="https://drive.google.com/file/d/1pLXu0HaZvyCVzEsz2IJpO-5CrPrf4puy/view?usp=sharing" 
+              href="https://drive.google.com/file/d/1GVDq4__rJeUUGYS_v1xbavAyoLcFqiXp/view?usp=sharing" 
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-blue-600 text-white font-medium sm:px-6 px-6 py-3 rounded-full hover:bg-blue-700 transition-all"
