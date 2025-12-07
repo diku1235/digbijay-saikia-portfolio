@@ -61,7 +61,18 @@ export default function Hero() {
 
       {/* Scroll Strap with bottom-to-top animation */}
       <motion.div
-        className="absolute md:top-[42rem] left-1/2 -translate-x-1/2 w-screen z-10 transform"
+        className="
+            absolute 
+            left-1/2 -translate-x-1/2 
+            w-screen 
+            z-10 transform
+
+            sm:top-[65rem]
+            md:top-[40rem]
+            lg:top-[40rem]
+            xl:top-[45rem]
+            2xl:top-[40rem]
+          "
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 1 }}
