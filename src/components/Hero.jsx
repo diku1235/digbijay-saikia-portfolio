@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="scroll-mt-28 max-w-[1400px] mx-auto px-6 py-10 md:py-20 mt-6 lg:mt-10 dark:bg-[var(--background-dark)] dark:text-[var(--color-dark)]"
+      className="scroll-mt-28 max-w-[1400px] mx-auto px-6 pt-10 mt-6 lg:mt-10 dark:bg-[var(--background-dark)] dark:text-[var(--color-dark)]"
     >
       {/* Main content with responsive spacing */}
       <div className="flex flex-col md:flex-row items-center justify-between mb-12 sm:mb-16 md:mb-20 lg:mb-10 gap-8 sm:gap-12 md:gap-12 lg:gap-16">
@@ -58,29 +58,6 @@ export default function Hero() {
           />
         </motion.div>
       </div>
-
-      {/* Scroll Strap with bottom-to-top animation */}
-      <motion.div
-        className="
-            absolute 
-            left-1/2 -translate-x-1/2 
-            w-screen 
-            z-10 transform
-
-            sm:top-[65rem]
-            md:top-[40rem]
-            lg:top-[40rem]
-            xl:top-[45rem]
-            2xl:top-[40rem]
-          "
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.6, duration: 1 }}
-      >
-        <div className="scrolling-strap-container">
-          <ScrollingStrap />
-        </div>
-      </motion.div>
     </section>
   );
 }
