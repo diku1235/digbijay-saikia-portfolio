@@ -1,9 +1,8 @@
 import { motion } from 'framer-motion'; // Import framer-motion
 import heroImg from '../assets/hero.png';
 import WhatsAppButton from './WhatsAppButton';
-import ScrollingStrap from '../components/ScrollingStrap';
 
-export default function Hero() {
+export default function Hero({ onFinish }) {
   return (
     <section
       id="hero"
@@ -14,19 +13,24 @@ export default function Hero() {
         
         {/* Left content with bottom-to-top animation */}
         <motion.div
-          className="md:w-1/2 lg:text-left"
-          initial={{ opacity: 0, y: 80 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.2  }}
-        >
+  className="relative md:w-1/2 mt-8 md:mt-0"
+  initial={{ opacity: 0, y: 80 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, delay: 0.4 }}
+  onAnimationComplete={() => {
+    if (onFinish) onFinish();
+  }}
+>
+
           <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white">
             Hi<span className="inline-block animate-wave origin-[70%_70%]">👋</span>,<br />
             I’m <span className="text-black dark:text-gray-300">Digbijay Saikia</span>
           </h1>
 
-          <p className="mt-6 text-gray-600 dark:text-gray-300 text-lg sm:text-lg md:text-lg lg:text-2xl">
-            Freelance <strong>UI/UX Designer</strong> creating user-centered designs that drive results, with expertise in wireframing, prototyping, and seamless interfaces.
+          <p className="mt-6 text-gray-600 dark:text-gray-300 text-lg sm:text-lg md:text-lg lg:text-xl">
+            Experienced <strong>UI/UX Designer</strong> and <strong>Software Developer</strong> crafting intuitive, scalable, and user-centered digital solutions with expertise in design, development, and system architecture.
           </p>
+
 
           <div className="mt-10 flex justify-center lg:justify-start gap-4">
             <a 

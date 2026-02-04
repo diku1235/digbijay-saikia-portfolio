@@ -49,7 +49,7 @@ export default function Footer() {
             <div className="flex gap-4">
               <a target="_blank" href="https://www.linkedin.com/in/digbijay-saikia/"><img src={linkedinIcon} alt="LinkedIn" className="w-10 h-10 rounded-full bg-white p-1" /></a>
               <a target="_blank" href="https://www.behance.net/digbijaysaikia"><img src={behanceIcon} alt="Behance" className="w-10 h-10 rounded-full bg-white p-1" /></a>
-              <a target="_blank" href="https://x.com/diku1235"><img src={twitterIcon} alt="Twitter" className="w-10 h-10 rounded-full bg-white p-1" /></a>
+              <a target="_blank" href="https://x.com/digbijay_saikia"><img src={twitterIcon} alt="Twitter" className="w-10 h-10 rounded-full bg-white p-1" /></a>
               <a target="_blank" href="https://www.youtube.com/channel/UCapinH5QNPvmEkA_iqVVKfg"><img src={youtubeIcon} alt="YouTube" className="w-10 h-10 rounded-full bg-white p-1" /></a>
             </div>
           </div>
